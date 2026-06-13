@@ -1,0 +1,224 @@
+.drawer {
+
+  position: fixed;
+
+  top:0;
+  right:-420px;
+
+  width:380px;
+
+  height:100vh;
+
+  background:white;
+
+  z-index:1000;
+
+  padding:20px;
+
+  transition:right 0.3s ease;
+
+  box-shadow:-5px 0 20px rgba(0,0,0,0.15);
+
+  overflow-y:auto;
+
+}
+
+
+
+.open {
+
+  right:0;
+
+}
+
+
+
+.overlay {
+
+  position:fixed;
+
+  inset:0;
+
+  background:rgba(0,0,0,0.4);
+
+  z-index:999;
+
+}
+
+
+
+.header {
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  border-bottom:1px solid #ddd;
+
+  padding-bottom:15px;
+
+}
+
+
+
+.closeBtn {
+
+  width:auto;
+
+  border:none;
+
+  background:none;
+
+  font-size:20px;
+
+  cursor:pointer;
+
+}
+
+
+
+.empty {
+
+  text-align:center;
+
+  margin-top:50px;
+
+}
+
+
+
+.items {
+
+  margin-top:20px;
+
+}
+
+
+
+.cartItem {
+
+  display:flex;
+
+  gap:15px;
+
+  padding:15px 0;
+
+  border-bottom:1px solid #eee;
+
+}
+
+
+
+.cartItem img {
+
+  width:70px;
+
+  height:70px;
+
+  object-fit:contain;
+
+}
+
+
+
+.details {
+
+  flex:1;
+
+}
+
+
+
+.details h4 {
+
+  font-size:14px;
+
+  margin:0 0 8px;
+
+}
+
+
+
+.quantity {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  margin:10px 0;
+
+}
+
+
+
+.quantity button {
+
+  width:30px;
+
+  height:30px;
+
+  padding:0;
+
+}
+
+
+
+.remove {
+
+  width:auto;
+
+  background:none;
+
+  color:red;
+
+  border:none;
+
+  cursor:pointer;
+
+}
+
+
+
+.summary {
+
+  position:sticky;
+
+  bottom:0;
+
+  background:white;
+
+  padding-top:20px;
+
+  margin-top:20px;
+
+  border-top:1px solid #ddd;
+
+}
+
+
+
+.summary div {
+
+  display:flex;
+
+  justify-content:space-between;
+
+  margin-bottom:10px;
+
+}
+
+
+
+@media(max-width:767px){
+
+  .drawer{
+
+    width:90%;
+
+  }
+
+}
